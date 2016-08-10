@@ -1,0 +1,22 @@
+{
+	"candidato1":{
+		"nombre" : "Persona1",
+		"pais" : "México",
+		"votos" : 0
+	},
+	"candidato2":{
+		"nombre" : "Persona2",
+		"pais" : "España",
+		"votos" : 0
+	},
+	"candidato3":{
+		"nombre" : "Persona3",
+		"pais" : "Peru",
+		"votos" : 0
+	},
+	"candidato4":{
+		"nombre" : "Persona4",
+		"pais" : "República dominicana",
+		"votos" : 0
+	}
+}

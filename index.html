@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Datos en tiempo real con D3</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		
+		<!-- load c3 css -->
+		<link rel="stylesheet" type="text/css" href="libs/c3.css">
+		<!-- my css -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<!-- load jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!-- d3 js -->
+		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<!-- c3 js -->
+		<script type="text/javascript" src="libs/c3.js"></script>
+		<!-- firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+		<!-- My script -->
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<div class="center">
+			<div class="grafica">
+				<h1>Sistema de Votaciones</h1>
+				<span id="spinner" class="fa fa-spin fa-3x"></span>
+				<div id="chart"></div>
+				<button id="bar" type="button" class="btn btn-success">
+					<span class="fa fa-bar-chart"></span>
+					Gráfica de barras
+				</button>
+
+				<button id="pie" type="button" class="btn btn-success">
+					<span class="fa fa-pie-chart"></span>
+					Gráfica circular
+				</button>
+
+				<button id="donut" type="button" class="btn btn-success">
+					<span class="fa fa-circle-o-notch"></span>
+					Gráfica de rosca
+				</button>
+
+				<button id="random" type="button" class="btn btn-warning">
+					<span class="fa fa-random"></span>
+					Datos aleatorios
+				</button>
+
+			</div>
+			<div class="voteApp">
+				<div class="container">
+					<div class="comida">
+						<button id="candidato1" type="button" class="btn btn-primary btn-lg">Candidato1</button>
+						<p id="votos_candidato1" class="bg-info">
+							<span class="badge">0</span>
+							<br>votos
+						</p>
+					</div>
+					<div class="comida">
+						<button id="candidato4" type="button" class="btn btn-success btn-lg">Candidato4</button>
+						<p id="votos_candidato4" class="bg-info">
+							<span class="badge">0</span>
+							<br>votos
+						</p>
+					</div>
+					<div class="comida">
+						<button id="candidato3" type="button" class="btn btn-warning btn-lg">Candidato3</button>
+						<p id="votos_candidato3" class="bg-info">
+							<span class="badge">0</span>
+							<br>votos
+						</p>
+					</div>
+					<div class="comida">
+						<button id="candidato2" type="button" class="btn btn-info btn-lg">Candidato2</button>
+						<p id="votos_candidato2" class="bg-info">
+							<span class="badge">0</span>
+							<br>votos
+						</p>
+					</div>
+				</div>
+				<div class="total" id="total">
+					<span class="badge">0</span>
+					<br>Total de votos emitidos
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
